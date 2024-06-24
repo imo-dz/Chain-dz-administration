@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+    tools:context=".Views.ChooseLanguageActivity">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/translate" />
+
+        <TextView
+            android:id="@+id/name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/biennale_bold"
+            android:text="@string/choose_your_preferred_language"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="4dp"
+            android:text="@string/please_select_your_language"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/name_tv" />
+
+        <RadioGroup
+            android:id="@+id/languageRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <RadioButton
+                android:id="@+id/enRBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/btn_stroke_gray"
+                android:button="@android:color/transparent"
+                android:drawableLeft="@drawable/uk"
+                android:drawablePadding="12dp"
+                android:padding="12dp"
+                android:text="English"  />
+
+            <RadioButton
+                android:id="@+id/frRBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/btn_stroke_gray"
+                android:button="@android:color/transparent"
+                android:drawableLeft="@drawable/fr"
+                android:drawablePadding="12dp"
+                android:padding="12dp"
+                android:text="Français" />
+
+            <RadioButton
+                android:id="@+id/arRBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:background="@drawable/btn_stroke_gray"
+                android:button="@android:color/transparent"
+                android:drawableLeft="@drawable/dz"
+                android:drawablePadding="12dp"
+                android:padding="12dp"
+
+                android:text="العربية"
+                android:textDirection="ltr" />
+
+        </RadioGroup>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/lNextBtn"
+            style="@style/buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="64dp"
+            android:background="@drawable/btn_main"
+            android:text="@string/next"
+            android:textAllCaps="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/languageRadioGroup" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

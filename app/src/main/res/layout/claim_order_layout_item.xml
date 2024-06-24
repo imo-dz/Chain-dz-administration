@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="4dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardElevation="2dp"
+    android:layout_margin="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/product_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product name"
+                android:fontFamily="@font/biennale_medium"
+                android:textSize="18sp"
+                android:textColor="@color/lmainColor"/>
+            <TextView
+                android:id="@+id/lot_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="24/06/2024"
+                android:fontFamily="@font/biennale_regular"
+                android:textSize="16sp"
+                android:layout_gravity="bottom" />
+            <TextView
+                android:id="@+id/client_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product name"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/biennale_regular"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/profile"
+                android:drawablePadding="4dp"
+                android:drawableTint="@color/dark5"
+                android:gravity="center_vertical"/>
+            <TextView
+                android:id="@+id/client_phone_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product name"
+                android:fontFamily="@font/biennale_regular"
+                android:textSize="16sp"
+                android:drawableStart="@drawable/phone"
+                android:drawableTint="@color/dark5"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/date_tv"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="24/06/2024"
+                android:fontFamily="@font/biennale_regular"
+                android:textSize="16sp"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="16dp" />
+
+
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/product_img"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

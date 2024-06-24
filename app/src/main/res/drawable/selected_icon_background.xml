@@ -1,0 +1,4 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Set your desired background color -->
+    <solid android:color="@color/white" />
+</shape>

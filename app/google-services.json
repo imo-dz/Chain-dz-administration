@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "599748886458",
+    "project_id": "chain-dz",
+    "storage_bucket": "chain-dz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:599748886458:android:92cbbf4735d4dcd02ce783",
+        "android_client_info": {
+          "package_name": "com.example.chaindzadministration"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCRJj_L5mtOrM8tagsCs18kS736kT0EMc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
